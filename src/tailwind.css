@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto 1fr;
+}
+
+.book-result {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		'img'
+		'title'
+		'description';
+
+	@apply mt-6 shadow p-6;
+}
+
+@screen md {
+	.book-result {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-template-rows: auto 1fr;
+		grid-template-areas:
+			'img title'
+			'img description';
+	}
+}
+
+.book-result img {
+	grid-area: img;
+}
+
+.book-result h2 {
+	grid-area: title;
+}
+
+.book-result p {
+	grid-area: description;
+}
