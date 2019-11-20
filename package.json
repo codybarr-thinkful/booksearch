@@ -13,7 +13,8 @@
 		"start": "yarn watch:css & react-scripts start",
 		"build": "yarn build:css && react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"deploy": "yarn build && surge build/ booksearch-thinkful.surge.sh"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
