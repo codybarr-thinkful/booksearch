@@ -44,7 +44,6 @@ function SearchForm({ updateResults, updateLoading }) {
 		updateLoading(true)
 
 		const params = getParams()
-		console.log(params)
 
 		const res = await fetch(
 			`https://www.googleapis.com/books/v1/volumes?${params}`

@@ -10,7 +10,6 @@ class App extends Component {
 	}
 
 	updateResults = results => {
-		console.log(results)
 		this.setState({ results })
 	}
 
