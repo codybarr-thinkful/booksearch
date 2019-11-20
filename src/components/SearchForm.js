@@ -29,7 +29,7 @@ function SearchForm({ updateResults, updateLoading }) {
 		}
 
 		if (selectedBookType !== 'none') {
-			params.filter = selectedPrintType
+			params.filter = selectedBookType
 		}
 
 		return Object.keys(params)
